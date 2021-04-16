@@ -1,0 +1,44 @@
+CREATE TABLE user(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+LName VARCHAR(50),
+FName VARCHAR(50),
+Patro INTEGER,
+INN VARCHAR(50),
+Series VARCHAR(50),
+Num VARCHAR(50),
+DIss VARCHAR(50),
+DivCode VARCHAR(50),
+IssVH VARCHAR(50),
+Login VARCHAR1(50),
+Pass VARCHAR1(50),
+Perm INTEGER 
+);
+
+
+INSERT INTO user(LName, FName, Patro, INN, Series, Num, DIss, DivCode, IssVH, Login, Pass, Perm)
+VALUES('Фамилия', 'Имя', 'Отчетство', 'ИНН', 'Серия паспорта', 'Номер паспорта', 'Дата выдачи паспорта', 'Код подразделения', 'Кем выдан', 'Admin', '111', 1);
+
+INSERT INTO user(LName, FName, Patro, INN, Series, Num, DIss, DivCode, IssVH, Login, Pass, Perm)
+VALUES('Микова', 'Микова', 'Микова', '15971561', '4650', '191285', '14.05.2017', '671-633', 'ОУФМС России по г. Балаково', 'Mikova', '111', 0);
+
+INSERT INTO user(LName, FName, Patro, INN, Series, Num, DIss, DivCode, IssVH, Login, Pass, Perm)
+VALUES('Горячева', 'Зоя', 'Тимофеевна', '1597262', '4084', '898847', '20.02.2016', '650-338', 'Управление внутренних дел по г. Хабаровск', 'Gora', '111', 0);
+
+CREATE TABLE cheta(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+id_vid INЕEGER,
+id_order INTEGER,
+SUM INTEGER
+);
+
+INSERT INTO cheta(id_vid, id_order, SUM)
+VALUES(1, 1, 15000);
+
+CREATE TABLE trading(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+recipient INЕEGER,
+sender INTEGER,
+SUM INTEGER
+);
+
+INSERT INTO trading(recipient, sender, SUM)VALUES() 
